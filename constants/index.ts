@@ -234,6 +234,10 @@ export const skills = [
     {
         name: "Bootstrap",
         url: "/assets/bootstrap-logo.png"
+    },
+    {
+        name: "Git",
+        url: "/assets/git.png"
     }
 ]
 
@@ -243,23 +247,6 @@ export const education = [
     'OpenClassroom',
 ]
 
-export const certifications = [
-    {
-        id: 1,
-        title: "React Js for everyone - The Ultimate Training [more than 39 hours]",
-        author: "Donkey Geek"
-    },
-    {
-        id: 2,
-        title: "Code 10 Projects with React",
-        author: "Enzo Ustariz"
-    },
-    {
-        id: 3,
-        title: "Next.js: Full Course",
-        author: "Enzo Ustariz"
-    }
-]
 
 export const projects = [
     {

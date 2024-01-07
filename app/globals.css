@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,7 +19,7 @@
 }*/
 body {
   background: #131313;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2', 'Poppins', sans-serif;
 }
 .glassmorphism {
   background: rgba(255, 255, 255, 0.2);
