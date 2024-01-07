@@ -43,6 +43,19 @@ body {
   color: transparent;
 }
 
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: hsl(250, 12%, 90%);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(250, 8%, 65%);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #16a34a;
+}
+
 /* START: Navbar styles */
 
 .items-nav a {
