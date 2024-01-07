@@ -37,14 +37,14 @@ const ChangeLanguage = () => {
     >
       <div className="relative flex-center flex-col">
         {flags.map((flag) => (
-          <div key={flag.id} className="p-2">
+          <div key={flag.id} className="w-auto p-2">
             <Image
             key={flag.lang}
             src={flag.url}
             width={25}
             height={25}
             alt={flag.lang}
-            className="w-full h-[15px] cursor-pointer"
+            className="h-[15px] object-contain cursor-pointer"
             onClick={() => changeLanguage(flag.lang, flag.id)}
           />
           </div>
