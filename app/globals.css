@@ -1,27 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
 }
+/*body{
+  background: #1e2430;
+}*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/*body{
+  background: #181a1b;
+}*/
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #131313;
+  font-family: 'Exo 2', sans-serif;
 }
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.items-nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+}
+.logo{
+  background: linear-gradient(to left, #97cc04 45%, #2D7DD2);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* START: Navbar styles */
+
+.items-nav a {
+  @apply block text-white w-full h-full py-3 px-4 flex-center md:hover:bg-transparent;
+}
+/* END: Navbar styles */
+
+/* START: General styles */
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.paddings {
+  @apply px-6 sm:px-10 md:px-16 lg:px-24 xl:px-44 2xl:px-56;
+}
+.sections {
+  @apply flex flex-col lg:flex-row items-center lg:items-start justify-center gap-x-24 gap-y-12 w-full paddings;
+}
+.img-container {
+  @apply w-full h-full relative overflow-hidden;
+}
+.box-container {
+  @apply w-full lg:w-[70%] xl:w-[60%] 2xl:w-[40%] flex flex-col gap-6;
+}
+/* END: General styles */
+
+/* START: Profil styles */
+.profil-container {
+  @apply flex-center relative w-[200px] h-[200px] md:w-[300px] md:h-[300px] transition-all duration-100 pt-6 shadow-[0_0_10px_rgba(255,255,255)] rounded-full bg-white;
+}
+.overlay {
+  @apply w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-full border-2 border-white absolute top-1/2 -translate-y-1/2 -z-10;
+}
+.description-content {
+  @apply text-white flex flex-wrap leading-[40px];
+}
+/* END: Profil styles */
+
+/* START: About styles */
+.about-img-container {
+  @apply relative w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] border-t-[4px] border-green-600;
+}
+.about-img {
+  @apply w-full h-full object-cover;
+}
+/* END: About styles */
+
+/* START: Project styles */
+.projects-container {
+  @apply relative grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 gap-y-4;
+}
+.project-content {
+  @apply flex flex-col gap-y-6 py-6 justify-between relative;
+}
+.project-content-box {
+  @apply flex justify-between flex-1 flex-col gap-3 lg:px-4 lg:py-4 lg:bg-[#1c1c1c];
+}
+.project-description {
+  @apply text-white flex flex-wrap;
+}
+/* END: Project styles */
