@@ -15,7 +15,7 @@ const EduDetails = () => {
     <div className="flex flex-col gap-6">
       <div
         className={`relative flex items-center gap-12 py-2 before:w-12 before:h-[3px] before:absolute before:bottom-0 ${
-          !details ? "before:left-0" : "before:left-[7.8rem]"
+          !details ? "before:left-0" : "before:left-[8.5rem]"
         } before:bg-green-600 before:transition-[left] before:duration-100 before:ease-in`}
       >
         <span
