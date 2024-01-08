@@ -52,7 +52,7 @@ export const traductionsData = {
         home: {
             title: "Principal",
             title2: "Olá, Eu sou",
-            subtitle: "Sou Desenvolvedor FrontEnd Web e Móvel",
+            subtitle: "Sou Desenvolvedor FrontEnd Web e Mobile",
             description: "Futuro graduado em Análise e Desenvolvimento de Sistemas. Sou apaixonado pela criação de interfaces modernas e de alta qualidade que garantam excelentes experiências ao usuário."
         },
         skills: {
