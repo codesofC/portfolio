@@ -3,7 +3,7 @@ export const traductionsData = {
         home: {
             title: "Home",
             title2: "Hi, I'm",
-            subtitle: "I'm a Web & Mobile FrontEnd Developer",
+            subtitle: "I'm a Web FrontEnd Developer",
             description: "Future graduate in System Analysis and Development. I'm passionate about creating modern, high-quality interfaces that guarantee excellent user experiences."
         },
         skills: {
@@ -12,7 +12,7 @@ export const traductionsData = {
         aboutMe: {
             title: "About me",
             description: [
-                "I am a web and mobile developer with a passion for creative and interactive applications focused on responsiveness, performance, animations and SEO. I mainly dominate React JS, NextJs and Typescript. I am a team player because I love learning and I am always looking to expand my knowledge by learning from others.",
+                "I am a web developer with a passion for creative and interactive applications focused on responsiveness, performance, animations and SEO. I mainly dominate React JS, NextJs and Typescript. I am a team player because I love learning and I am always looking to expand my knowledge by learning from others.",
                 "I based in Brazil where I study System Analysis and Development at URI."
             ],
             experience: {
@@ -52,7 +52,7 @@ export const traductionsData = {
         home: {
             title: "Principal",
             title2: "Olá, Eu sou",
-            subtitle: "Sou Desenvolvedor FrontEnd Web e Mobile",
+            subtitle: "Sou Desenvolvedor FrontEnd Web",
             description: "Futuro graduado em Análise e Desenvolvimento de Sistemas. Sou apaixonado pela criação de interfaces modernas e de alta qualidade que garantam excelentes experiências ao usuário."
         },
         skills: {
@@ -61,7 +61,7 @@ export const traductionsData = {
         aboutMe: {
             title: "Sobre mim",
             description: [
-                "Sou um desenvolvedor web e mobile apaixonado por aplicações criativas e interativas focadas em responsividade, performance, animações e SEO. Domino principalmente React JS, NextJs e Typescript. Gosto trabalhar em equipe porque adoro aprender e estou sempre em busca de ampliar meus conhecimentos aprendendo com os outros.",
+                "Sou um desenvolvedor web apaixonado por aplicações criativas e interativas focadas em responsividade, performance, animações e SEO. Domino principalmente React JS, NextJs e Typescript. Gosto trabalhar em equipe porque adoro aprender e estou sempre em busca de ampliar meus conhecimentos aprendendo com os outros.",
                 "Moro no Brasil onde estudo Análise e Desenvolvimento de Sistemas na URI."
             ],
             experience: {
@@ -101,7 +101,7 @@ export const traductionsData = {
         home: {
             title: "Acceuil",
             title2: "Salut, Je suis",
-            subtitle: "Je suis Développeur FrontEnd Web & Mobile",
+            subtitle: "Je suis Développeur FrontEnd Web",
             description: "Future gradué en Analise et Developpement Système. Je suis passionné par la creation d'interfaces modernes et de haut qualité qui garantissent de l'excellentes experiences utilisateurs."
         },
         skills: {
@@ -110,7 +110,7 @@ export const traductionsData = {
         aboutMe: {
             title: "A propos de moi",
             description: [
-                "Je suis un developpeur web et mobile avec une passion pour les applications créatives et intéractives concentrés sur la responsivité, perfomance, animations et SEO. Je domine essentiellement React JS, NextJs et Typescript.  Je suis un joueur d'équipe parce que j'aime apprendre et je cherche toujours à étendre mes connaissances en apprenant des autres.",
+                "Je suis un developpeur web avec une passion pour les applications créatives et intéractives concentrés sur la responsivité, perfomance, animations et SEO. Je domine essentiellement React JS, NextJs et Typescript.  Je suis un joueur d'équipe parce que j'aime apprendre et je cherche toujours à étendre mes connaissances en apprenant des autres.",
                 "Je vis au Brésil oú j'étudis l'Analise et Developpement Système à URI."
             ],
             experience: {
@@ -150,7 +150,7 @@ export const traductionsData = {
         home: {
             title: "Principal",
             title2: "Hola, yo soy",
-            subtitle: "Soy desarrollador front-end web y móvil",
+            subtitle: "Soy desarrollador front-end web",
             description: "Futuro graduado en Análisis y Desarrollo de Sistemas. Me apasiona crear interfaces modernas y de alta calidad que garanticen excelentes experiencias de usuario."
         },
         skills: {
@@ -159,7 +159,7 @@ export const traductionsData = {
         aboutMe: {
             title: "Sobre mi",
             description: [
-                "Soy un desarrollador web y móvil apasionado por las aplicaciones creativas e interactivas enfocadas en la responsividade, rendimiento, animaciones y el SEO. Domino principalmente React JS, NextJs y Typescript. Me gusta trabajar en equipo porque me encanta aprender y siempre busco ampliar mis conocimientos aprendiendo de los demás.",
+                "Soy un desarrollador web apasionado por las aplicaciones creativas e interactivas enfocadas en la responsividade, rendimiento, animaciones y el SEO. Domino principalmente React JS, NextJs y Typescript. Me gusta trabajar en equipo porque me encanta aprender y siempre busco ampliar mis conocimientos aprendiendo de los demás.",
                 "Vivo en Brasil donde estudio Análisis y Desarrollo de Sistemas en la URI."
             ],
             experience: {
@@ -216,7 +216,7 @@ export const skills = [
         url: "/assets/sass.png"
     },
     {
-        name: "React & React-Native",
+        name: "React",
         url: "/assets/React-icon.png"
     },
     {
@@ -296,13 +296,14 @@ export const projects = [
     },
     {
         id: 4,
-        title: "React-native project",
+        title: "Next.js and TypeScript project",
         description: "Responsive car search site by brand, model and others from 2015 to 2022, using server components and the Cars API by API-Ninjas API.",
         demoUrl: "",
         repoUrl: "",
         imgUrl: "/assets/project-0.png",
         stacks: [
-            "React-Native",
+            "Next Js",
+            "TypeScript"
         ]
     },
 ]
