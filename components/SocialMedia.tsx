@@ -24,7 +24,7 @@ const SocialMedia = () => {
         </Link>
       </li>
       <li>
-        <Link href="https://www.linkedin.com/in/judelin-inélus-9a1493289" target="_blank">
+        <Link href="https://www.linkedin.com/in/judelininelus" target="_blank">
           <FaLinkedinIn />
         </Link>
       </li>

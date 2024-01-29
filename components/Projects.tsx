@@ -61,7 +61,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                {item.id !== projects.length ? <div className="flex items-center gap-2 md:gap-4 mt-4">
+                <div className={`flex items-center gap-2 md:gap-4 mt-4 ${item.id % 2 === 0 ? "self-end" : "self-start"}`}>
                   <Link href={item.repoUrl} target="_blank" className="text-white">
                     <span title="code" className="text-2xl">
                       <FaGithub />
@@ -76,7 +76,7 @@ const Projects = () => {
                       <HiOutlineExternalLink />
                     </span>
                   </Link>
-                </div> : null}
+                </div>
               </div>
             </motion.div>
           ))}

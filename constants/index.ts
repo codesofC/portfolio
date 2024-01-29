@@ -4,7 +4,7 @@ export const traductionsData = {
             title: "Home",
             title2: "Hi, I'm",
             subtitle: "I'm a Web FrontEnd Developer",
-            description: "Future graduate in System Analysis and Development. I'm passionate about creating modern, high-quality interfaces that guarantee excellent user experiences."
+            description: "I'm passionate about creating modern, high-quality interfaces that guarantee excellent user experiences."
         },
         skills: {
             title: "Skills"
@@ -16,10 +16,10 @@ export const traductionsData = {
                 "I based in Brazil where I study System Analysis and Development at URI."
             ],
             experience: {
-                title1: "Experience",
+                title1: "Get in Touch",
                 title2: "Education",
                 p1: "Looking for my first official experience.",
-                p2: "Maybe in your company?"
+                p2: "Maybe in your company!"
             }
         },
         myProjects: {
@@ -29,14 +29,15 @@ export const traductionsData = {
                     description: "Responsive supermarket e-commerce platform with authentication, API use and home delivery service."
                 },
                 {
-                    description: "Responsive car search site by brand, model and others from 2015 to 2022, using server components and the Cars API by API-Ninjas API."
+                    description: "Car search system according to brand, model, year etc... Using the Ninja-Api Cars API and that of cdn.imagin.studio to generate car images."
+                },
+                {
+                    description: "Beautiful responsive and animate landing page maked with Next Js and Framer motion."
                 },
                 {
                     description: "Visit to see more of my projects! It is a responsive platform for sharing projects and others using NextAuth authentication and storage with Firebase."
                 },
-                {
-                    description: "This project is under construction"
-                },
+                
             ] 
         },
         contacts: {
@@ -50,10 +51,10 @@ export const traductionsData = {
     },
     PT: {
         home: {
-            title: "Principal",
+            title: "Início",
             title2: "Olá, Eu sou",
             subtitle: "Sou Desenvolvedor FrontEnd Web",
-            description: "Futuro graduado em Análise e Desenvolvimento de Sistemas. Sou apaixonado pela criação de interfaces modernas e de alta qualidade que garantam excelentes experiências ao usuário."
+            description: "Sou apaixonado pela criação de interfaces modernas e de alta qualidade que garantam excelentes experiências ao usuário."
         },
         skills: {
             title: "Habilidades"
@@ -65,10 +66,10 @@ export const traductionsData = {
                 "Moro no Brasil onde estudo Análise e Desenvolvimento de Sistemas na URI."
             ],
             experience: {
-                title1: "Experiência",
+                title1: "Fala comigo",
                 title2: "Educação",
                 p1: "Procurando minha primeira experiência oficial.",
-                p2: "Talvez na sua empresa?"
+                p2: "Talvez na sua empresa!"
             }
         },
         myProjects: {
@@ -78,13 +79,13 @@ export const traductionsData = {
                     description: "Plataforma responsiva de e-commerce de supermercado com autenticação, uso de API e serviço de entrega em domicílio."
                 },
                 {
+                    description: "Sistema de busca de carros por marca, modelo, ano etc... Utilizando a API Ninja-Api Cars e a do cdn.imagin.studio para gerar imagens de carros."
+                },
+                {
                     description: "Linda landing page responsiva e animada feita com Next Js e Framer motion."
                 },
                 {
                     description: "Visite para ver mais dos meus projetos! É uma plataforma responsiva para compartilhar projetos e outros usando autenticação e armazenamento NextAuth com Firebase."
-                },
-                {
-                    description: "Esse projeto está em desenvolvimento."
                 },
             ] 
         },
@@ -102,7 +103,7 @@ export const traductionsData = {
             title: "Acceuil",
             title2: "Salut, Je suis",
             subtitle: "Je suis Développeur FrontEnd Web",
-            description: "Future gradué en Analise et Developpement Système. Je suis passionné par la creation d'interfaces modernes et de haut qualité qui garantissent de l'excellentes experiences utilisateurs."
+            description: "Je suis passionné par la creation d'interfaces modernes et de haut qualité qui garantissent de l'excellentes experiences utilisateurs."
         },
         skills: {
             title: "Compétences"
@@ -114,10 +115,10 @@ export const traductionsData = {
                 "Je vis au Brésil oú j'étudis l'Analise et Developpement Système à URI."
             ],
             experience: {
-                title1: "Experience",
+                title1: "Discutez avec moi",
                 title2: "Education",
                 p1: "À la recherche de ma première expérience officielle.",
-                p2: "Peut-être dans votre entreprise ?"
+                p2: "Peut-être dans votre entreprise!"
             }
         },
         myProjects: {
@@ -127,13 +128,13 @@ export const traductionsData = {
                     description: "Plateforme e-commerce de supermarket avec authentification, utilisation de API et service de livraison à domicile."
                 },
                 {
+                    description: "Système de recherche de voitures par marque, modèle, année etc... Utilisation de l'API Ninja-Api Cars et de celle de cdn.imagin.studio pour générer des images de voitures."
+                },
+                {
                     description: "Page d'acceuil responsive et animée, construit avec Next Js et Framer motion."
                 },
                 {
                     description: "Visitez pour voir plus de mes projets!!! Une plateforme de partage de projets et autres utilisant NextAuth authentication et le stockage de données avec Firebase."
-                },
-                {
-                    description: "Ce projet est en developpement"
                 },
             ] 
         },
@@ -151,7 +152,7 @@ export const traductionsData = {
             title: "Principal",
             title2: "Hola, yo soy",
             subtitle: "Soy desarrollador front-end web",
-            description: "Futuro graduado en Análisis y Desarrollo de Sistemas. Me apasiona crear interfaces modernas y de alta calidad que garanticen excelentes experiencias de usuario."
+            description: "Me apasiona crear interfaces modernas y de alta calidad que garanticen excelentes experiencias de usuario."
         },
         skills: {
             title: "Habilidades"
@@ -163,10 +164,10 @@ export const traductionsData = {
                 "Vivo en Brasil donde estudio Análisis y Desarrollo de Sistemas en la URI."
             ],
             experience: {
-                title1: "Experiencia",
+                title1: "Háblame",
                 title2: "Educación",
                 p1: "Buscando mi primera experiencia oficial.",
-                p2: "¿Quizás en tu empresa?"
+                p2: "¿Quizás en tu empresa!"
             }
         },
         myProjects: {
@@ -176,13 +177,13 @@ export const traductionsData = {
                     description: "Plataforma responsiva de comercio electrónico de supermercados con autenticación, uso de API y servicio de entrega a domicilio."
                 },
                 {
+                    description: "Sistema de búsqueda de coches según marca, modelo, año etc... Utilizando la API Ninja-Api Cars y la de cdn.imagin.studio para generar imágenes de coches."
+                },
+                {
                     description: "Hermosa página de inicio responsiva y animada creada con Next Js y Framer Motion."
                 },
                 {
                     description: "¡Visita para ver más de mis proyectos! Es una plataforma receptiva para compartir proyectos y otros que utilizan la autenticación y el almacenamiento NextAuth con Firebase."
-                },
-                {
-                    description: "Este proyecto está en construcción."
                 },
             ] 
         },
@@ -252,7 +253,6 @@ export const projects = [
     {
         id: 1,
         title: "Supermarket",
-        description: "Responsive supermarket e-commerce platform with authentication, API use and home delivery service.",
         demoUrl: "https://super-market-341q.vercel.app",
         repoUrl: "https://github.com/codesofC/superMarket",
         imgUrl: "/assets/project-1.png",
@@ -266,8 +266,20 @@ export const projects = [
     },
     {
         id: 2,
+        title: "Cars Search",
+        demoUrl: "https://show-car-woad.vercel.app",
+        repoUrl: "https://github.com/codesofC/showCar",
+        imgUrl: "/assets/project-0.png",
+        stacks: [
+            "TypeScript",
+            "NextJs",
+            "Tailwind CSS",
+            "React",
+        ]
+    },
+    {
+        id: 3,
         title: "Metaverse World",
-        description: "Beautiful responsive and animate landing page maked with Next Js and Framer motion.",
         demoUrl: "https://metaverse-lime-nine.vercel.app",
         repoUrl: "https://github.com/codesofC/metaverse",
         imgUrl: "/assets/project-2.png",
@@ -279,9 +291,8 @@ export const projects = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "ShareIt",
-        description: "Visit to see more of my projects! It is a responsive platform for sharing projects and others using NextAuth authentication and storage with Firebase.",
         demoUrl: "https://shareit-silk.vercel.app",
         repoUrl: "https://github.com/codesofC/shareit",
         imgUrl: "/assets/project-4.png",
@@ -292,18 +303,6 @@ export const projects = [
             "Typescript",
             "Tailwind CSS",
             "Firebase"
-        ]
-    },
-    {
-        id: 4,
-        title: "Next.js and TypeScript project",
-        description: "Responsive car search site by brand, model and others from 2015 to 2022, using server components and the Cars API by API-Ninjas API.",
-        demoUrl: "",
-        repoUrl: "",
-        imgUrl: "/assets/project-0.png",
-        stacks: [
-            "Next Js",
-            "TypeScript"
         ]
     },
 ]

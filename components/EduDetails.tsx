@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "./LanguageContext";
-import { certifications, education, traductionsData } from "@/constants/index";
+import { education, traductionsData } from "@/constants/index";
 import { useState } from "react";
 import Link from "next/link";
 import { IoCloudDownloadOutline } from "react-icons/io5";
@@ -14,19 +14,18 @@ const EduDetails = () => {
   return (
     <div className="flex flex-col gap-6">
       <div
-        className={`relative flex items-center gap-12 py-2 before:w-12 before:h-[3px] before:absolute before:bottom-0 ${
-          !details ? "before:left-0" : "before:left-[8.5rem]"
-        } before:bg-green-600 before:transition-[left] before:duration-100 before:ease-in`}
+        className={`relative flex items-center gap-12 py-2`}
       >
         <span
           onClick={() => setDetails(false)}
-          className="cursor-pointer text-white font-bold"
+          className={`cursor-pointer ${!details ? "text-green-600" : "text-white"} font-bold transition-all`}
         >
           {traductionsData[`${language}`].aboutMe.experience.title1}
         </span>
+        <span className="text-white"> | </span>
         <span
           onClick={() => setDetails(true)}
-          className="cursor-pointer text-white font-bold"
+          className={`cursor-pointer ${details ? "text-green-600" : "text-white"} font-bold transition-all`}
         >
           {traductionsData[`${language}`].aboutMe.experience.title2}
         </span>
@@ -43,7 +42,6 @@ const EduDetails = () => {
       ) : (
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-3">
-            <p className="text-white italic">Freelancer - Sept 2023</p>
             <p className="text-white font-bold">
               {traductionsData[`${language}`].aboutMe.experience.p1} <br />
               <span className="text-green-600">
@@ -62,7 +60,7 @@ const EduDetails = () => {
             </p>
           </div>
           <Link
-            href={`/assets/cv${language}.pdf`}
+            href={`/assets/Judelincv${language}.pdf`}
             className="w-20 flex-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg text-lg"
           >
             CV <IoCloudDownloadOutline />
