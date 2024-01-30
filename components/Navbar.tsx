@@ -39,7 +39,7 @@ const Navbar = () => {
       className={`w-full px-8 md:px-16 lg:px-24 py-3 flex justify-between sticky top-0 z-20 ${changeNavbar ? 'border-b' : null}  bg-[#131313]`}
     >
       <p className="text-3xl font-extrabold logo">
-        {"{ JIC }"}
+        JIC
       </p>
       <div 
         className="flex md:hidden text-white text-xl cursor-pointer"

@@ -33,7 +33,7 @@ const ChangeLanguage = () => {
       variants={fadeIn({ direction: "left", type: "tween", delay: 1, duration: 0.3})}
       initial="hidden"
       animate="show"
-      className="fixed top-[15vh] right-0 h-[126px] z-[5] bg-[rgba(255,255,255,0.3)] border"
+      className="fixed top-[15vh] right-0 h-[63px] z-[5] bg-[rgba(255,255,255,0.3)] border"
     >
       <div className="relative flex-center flex-col">
         {flags.map((flag) => (

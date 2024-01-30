@@ -97,105 +97,7 @@ export const traductionsData = {
             design: "Desenhar e construir por ",
             rights: "Todos direitos reservados"
         }
-    },
-    FR: {
-        home: {
-            title: "Acceuil",
-            title2: "Salut, Je suis",
-            subtitle: "Je suis Développeur FrontEnd Web",
-            description: "Je suis passionné par la creation d'interfaces modernes et de haut qualité qui garantissent de l'excellentes experiences utilisateurs."
-        },
-        skills: {
-            title: "Compétences"
-        },
-        aboutMe: {
-            title: "A propos de moi",
-            description: [
-                "Je suis un developpeur web avec une passion pour les applications créatives et intéractives concentrés sur la responsivité, perfomance, animations et SEO. Je domine essentiellement React JS, NextJs et Typescript.  Je suis un joueur d'équipe parce que j'aime apprendre et je cherche toujours à étendre mes connaissances en apprenant des autres.",
-                "Je vis au Brésil oú j'étudis l'Analise et Developpement Système à URI."
-            ],
-            experience: {
-                title1: "Discutez avec moi",
-                title2: "Education",
-                p1: "À la recherche de ma première expérience officielle.",
-                p2: "Peut-être dans votre entreprise!"
-            }
-        },
-        myProjects: {
-            title: "Projets",
-            projects: [
-                {
-                    description: "Plateforme e-commerce de supermarket avec authentification, utilisation de API et service de livraison à domicile."
-                },
-                {
-                    description: "Système de recherche de voitures par marque, modèle, année etc... Utilisation de l'API Ninja-Api Cars et de celle de cdn.imagin.studio pour générer des images de voitures."
-                },
-                {
-                    description: "Page d'acceuil responsive et animée, construit avec Next Js et Framer motion."
-                },
-                {
-                    description: "Visitez pour voir plus de mes projets!!! Une plateforme de partage de projets et autres utilisant NextAuth authentication et le stockage de données avec Firebase."
-                },
-            ] 
-        },
-        contacts: {
-            title: "Contacts",
-            description: "Entrez en contact avec moi!"
-        },
-        footer: {
-            design: "Conception et construction par",
-            rights: "Tous droits réservés"
-        }
-    },
-    ES: {
-        home: {
-            title: "Principal",
-            title2: "Hola, yo soy",
-            subtitle: "Soy desarrollador front-end web",
-            description: "Me apasiona crear interfaces modernas y de alta calidad que garanticen excelentes experiencias de usuario."
-        },
-        skills: {
-            title: "Habilidades"
-        },
-        aboutMe: {
-            title: "Sobre mi",
-            description: [
-                "Soy un desarrollador web apasionado por las aplicaciones creativas e interactivas enfocadas en la responsividade, rendimiento, animaciones y el SEO. Domino principalmente React JS, NextJs y Typescript. Me gusta trabajar en equipo porque me encanta aprender y siempre busco ampliar mis conocimientos aprendiendo de los demás.",
-                "Vivo en Brasil donde estudio Análisis y Desarrollo de Sistemas en la URI."
-            ],
-            experience: {
-                title1: "Háblame",
-                title2: "Educación",
-                p1: "Buscando mi primera experiencia oficial.",
-                p2: "¿Quizás en tu empresa!"
-            }
-        },
-        myProjects: {
-            title: "Proyectos",
-            projects: [
-                {
-                    description: "Plataforma responsiva de comercio electrónico de supermercados con autenticación, uso de API y servicio de entrega a domicilio."
-                },
-                {
-                    description: "Sistema de búsqueda de coches según marca, modelo, año etc... Utilizando la API Ninja-Api Cars y la de cdn.imagin.studio para generar imágenes de coches."
-                },
-                {
-                    description: "Hermosa página de inicio responsiva y animada creada con Next Js y Framer Motion."
-                },
-                {
-                    description: "¡Visita para ver más de mis proyectos! Es una plataforma receptiva para compartir proyectos y otros que utilizan la autenticación y el almacenamiento NextAuth con Firebase."
-                },
-            ] 
-        },
-        contacts: {
-            title: "Contactos",
-            description: "Ponte en contacto conmigo"
-        },
-        footer: {
-            design: "Diseño y construcción por",
-            rights: "Reservados todos los derechos"
-        }
-    },
+    }
     
 }
 
@@ -315,16 +217,6 @@ export const flags = [
     },
     {
         id: 1,
-        lang: "ES",
-        url: "/assets/es.png"
-    },
-    {
-        id: 2,
-        lang: "FR",
-        url: "/assets/fr.png"
-    },
-    {
-        id: 3,
         lang: "PT",
         url: "/assets/pt-br.png"
     }
