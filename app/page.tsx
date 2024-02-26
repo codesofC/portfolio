@@ -8,7 +8,7 @@ import Skills from '@/components/Skills'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-y-12 lg:gap-y-44">
+    <main className="relative flex min-h-screen flex-col gap-y-12 lg:gap-y-44">
       <Profil />
       <Skills />
       <About />

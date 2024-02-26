@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,29 +19,29 @@
   background: #181a1b;
 }*/
 body {
-  background: #131313;
   font-family: 'Exo 2', 'Poppins', sans-serif;
 }
 .glassmorphism {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .items-nav a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.7px);
-  -webkit-backdrop-filter: blur(2.7px);
+  backdrop-filter: blur(27px);
+  -webkit-backdrop-filter: blur(25px);
 }
 .logo{
-  background: linear-gradient(to left, #97cc04 45%, #2D7DD2);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #fff;
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
 }
 
 ::-webkit-scrollbar{
@@ -59,7 +60,7 @@ body {
 /* START: Navbar styles */
 
 .items-nav a {
-  @apply block text-white w-full h-full py-3 px-4 flex-center md:hover:bg-transparent;
+  @apply text-white w-full h-full py-3 px-4 flex-center md:hover:rounded-none md:hover:bg-transparent;
 }
 /* END: Navbar styles */
 
@@ -110,7 +111,7 @@ body {
   @apply flex flex-col gap-y-6 py-6 justify-between relative;
 }
 .project-content-box {
-  @apply flex justify-between flex-1 flex-col gap-3 lg:px-4 lg:py-4 lg:bg-[#1c1c1c];
+  @apply flex justify-between flex-1 flex-col gap-3 lg:px-4 lg:py-4 lg:bg-[rgba(0,0,0,.3)];
 }
 .project-description {
   @apply text-white flex flex-wrap;

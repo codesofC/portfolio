@@ -28,7 +28,6 @@ const Profil = () => {
         whileInView="show"
         className="profil-container"
       >
-        <div className="overlay" />
         <div
           className="img-container rounded-full"
         >

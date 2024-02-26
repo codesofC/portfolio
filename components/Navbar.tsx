@@ -36,10 +36,10 @@ const Navbar = () => {
       variants={navariant}
       initial="hidden"
       whileInView="show"
-      className={`w-full px-8 md:px-16 lg:px-24 py-3 flex justify-between sticky top-0 z-20 ${changeNavbar ? 'border-b' : null}  bg-[#131313]`}
+      className={`w-full px-8 md:px-16 lg:px-24 py-3 flex items-center justify-between sticky top-0 z-20 ${changeNavbar ? 'border-b' : null}  glassmorphism`}
     >
-      <p className="text-3xl font-extrabold logo">
-        JIC
+      <p className="text-lg font-extrabold logo">
+        codesofC
       </p>
       <div 
         className="flex md:hidden text-white text-xl cursor-pointer"
@@ -47,8 +47,8 @@ const Navbar = () => {
       >
         <BiMenuAltRight className="text-2xl" />
       </div>
-      <div className={`w-[90%] md:w-auto ${isOpen ? 'translate-y-0 md:translate-y-0' : '-translate-y-[300%] md:translate-y-0'} md:bg-transparent z-20 transition-all absolute left-1/2 -translate-x-1/2 md:translate-x-0 -bottom-[330%] md:relative md:left-0`}>
-        <ul className="flex-center flex-col md:flex-row md:w-auto glassmorphism md:bg-transparent z-30 rounded-full md:rounded-none md:shadow-none md:backdrop-blur-0 md:border-none">
+      <div className={`w-[90%] md:w-auto ${isOpen ? 'translate-y-[12%] md:translate-y-0' : '-translate-y-[300%] md:translate-y-0'} z-20 shadow-xl md:shadow-none transition-all absolute left-1/2 -translate-x-1/2 md:translate-x-0 -bottom-[330%] md:relative md:left-0`}>
+        <ul className="flex-center flex-col md:flex-row md:w-auto bg-[rgba(0,0,0,.7)] md:bg-transparent z-30 rounded-[16px] md:rounded-none md:shadow-none md:backdrop-blur-0 md:border-none overflow-hidden">
           <li className="items-nav w-full md:w-auto">
             <Link 
               href="#home" 

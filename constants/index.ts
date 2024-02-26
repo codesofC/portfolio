@@ -94,7 +94,7 @@ export const traductionsData = {
             description: "Entre em contato comigo!"
         },
         footer: {
-            design: "Desenhar e construir por ",
+            design: "Construido por ",
             rights: "Todos direitos reservados"
         }
     }
