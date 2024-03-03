@@ -48,7 +48,7 @@ const Navbar = () => {
         <BiMenuAltRight className="text-2xl" />
       </div>
       <div className={`w-[90%] md:w-auto ${isOpen ? 'translate-y-[12%] md:translate-y-0' : '-translate-y-[300%] md:translate-y-0'} z-20 shadow-xl md:shadow-none transition-all absolute left-1/2 -translate-x-1/2 md:translate-x-0 -bottom-[330%] md:relative md:left-0`}>
-        <ul className="flex-center flex-col md:flex-row md:w-auto bg-[rgba(0,0,0,.7)] md:bg-transparent z-30 rounded-[16px] md:rounded-none md:shadow-none md:backdrop-blur-0 md:border-none overflow-hidden">
+        <ul className="flex-center flex-col md:flex-row md:w-auto bg-slate-900 md:bg-transparent z-30 rounded-[16px] md:rounded-none md:shadow-none md:backdrop-blur-0 md:border-none overflow-hidden">
           <li className="items-nav w-full md:w-auto">
             <Link 
               href="#home" 

@@ -43,7 +43,7 @@ const Projects = () => {
                   width={900}
                   height={700}
                   alt={item.demoUrl}
-                  className="w-full h-full object-contain 2xl:object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="project-content-box">

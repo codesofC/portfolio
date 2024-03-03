@@ -15,7 +15,7 @@ const Contact = () => {
     const { language } = useLanguage()
 
   return (
-    <section className='sections py-4 lg:py-8 bg-[rgba(0,0,0,.3)]' id="contacts">
+    <section className='sections pt-4 pb-12' id="contacts">
         <motion.div
             variants={staggerContainer({type:'tween'}, 0.1)}
             initial="hidden"

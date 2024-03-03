@@ -13,7 +13,7 @@ const About = () => {
     const { language } = useLanguage()
 
   return (
-    <section className='bg-[rgba(0,0,0,.3)] backdrop-blur-xl sections py-8' id='about'>
+    <section className='sections py-4' id='about'>
         <motion.div 
             variants={fadeIn({
                 direction: "right",

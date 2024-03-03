@@ -29,7 +29,7 @@ export const traductionsData = {
                     description: "Responsive supermarket e-commerce platform with authentication, API use and home delivery service."
                 },
                 {
-                    description: "Car search system according to brand, model, year etc... Using the Ninja-Api Cars API and that of cdn.imagin.studio to generate car images."
+                    description: "MyTaxi, a dynamic and user-friendly mobility platform, offers seamless taxi like Uber. For this project, i use the power of MapBox's API to make and design into the map."
                 },
                 {
                     description: "Beautiful responsive and animate landing page maked with Next Js and Framer motion."
@@ -79,7 +79,7 @@ export const traductionsData = {
                     description: "Plataforma responsiva de e-commerce de supermercado com autenticação, uso de API e serviço de entrega em domicílio."
                 },
                 {
-                    description: "Sistema de busca de carros por marca, modelo, ano etc... Utilizando a API Ninja-Api Cars e a do cdn.imagin.studio para gerar imagens de carros."
+                    description: "MyTaxi, uma plataforma de mobilidade dinâmica e fácil de usar, oferece táxis integrados como o Uber. Para este projeto, uso o poder da API MapBox para criar e projetar o mapa."
                 },
                 {
                     description: "Linda landing page responsiva e animada feita com Next Js e Framer motion."
@@ -168,15 +168,16 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Cars Search",
-        demoUrl: "https://show-car-woad.vercel.app",
-        repoUrl: "https://github.com/codesofC/showCar",
+        title: "My Taxi",
+        demoUrl: "https://meu-taxi.vercel.app/",
+        repoUrl: "https://github.com/codesofC/meuTaxi",
         imgUrl: "/assets/project-0.png",
         stacks: [
             "TypeScript",
             "NextJs",
             "Tailwind CSS",
             "React",
+            "MapBox API"
         ]
     },
     {
