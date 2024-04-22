@@ -38,7 +38,7 @@ const About = () => {
             <br />
             <br />
           </p>
-          <p>
+          <div>
             To entertain myself, I like listening to music, podcasts, audio
             books. My apps most used are: <br />
             <div className="flex flex-wrap mt-4 gap-x-2 gap-y-1">
@@ -55,7 +55,7 @@ const About = () => {
                 </Code>
               ))}
             </div>
-          </p>
+          </div>
         </div>
         <div className="w-full flex flex-col sm:flex-row items-start sm:items-end gap-3 sm:gap-6">
           <ContactCard {...contacts[0]} />

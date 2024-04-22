@@ -13,9 +13,9 @@ type ProjectCardProps = {
 const ProjectCard = (props: ProjectCardProps) => {
   return (
     <Link href={props.demoUrl || props.repoUrl || "/"} target="_blank" className="hover:bg-accent/50 transition-colors rounded-sm">
-      <div className="flex gap-2 items-start h-full">
+      <div className="flex gap-2 items-start h-full p-1">
         <div className="p-3 bg-accent text-accent-foreground rounded-sm">{props.icon}</div>
-        <div className="flex flex-col gap-1 flex-wrap py-1">
+        <div className="flex flex-col gap-1 flex-wrap">
           <h2 className="font-semibold"> {props.title} </h2>
           <p className="text-sm text-muted-foreground"> {props.description} </p>
           <div className="flex gap-1 flex-wrap">
