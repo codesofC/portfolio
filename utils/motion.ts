@@ -1,6 +1,6 @@
 type motionProps = {
   direction?: "left" | "right" | "up" | "down",
-  type?: string,
+  type?: "spring" | "tween",
   delay?: number,
   duration?: number,
 }

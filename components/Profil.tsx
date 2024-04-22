@@ -1,75 +1,55 @@
-"use client";
 
-import { useLanguage } from "./LanguageContext";
-import { traductionsData } from "@/constants/index";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import {
-  fadeIn,
-  staggerContainer,
-} from "@/utils/motion";
 import SocialMedia from "./SocialMedia";
-import TypingText from "./TypingText";
+import Section from "./Section";
+import Code from "./Code";
 
 const Profil = () => {
 
-  const { language } = useLanguage()
-
-
   return (
-    <section className="sections mt-32" id="home">
-      <motion.div
-        variants={fadeIn({
-          direction: "right",
-          type: "tween",
-          duration: 0.3,
-        })}
-        initial="hidden"
-        whileInView="show"
-        className="profil-container"
+    <Section className="flex flex-col gap-8" id="home">
+      <div 
+        className="w-full flex flex-col md:flex-row gap-y-4 gap-x-8 items-center"
       >
-        <div
-          className="img-container rounded-full"
-        >
+        <div className="relative w-32 h-32 rounded-full flex items-center justify-center bg-primary overflow-hidden">
           <Image
             src={"/assets/profil-1.png"}
-            width={500}
-            height={500}
+            width={1200}
+            height={1200}
             priority
             alt="profil"
-            className="object-contain w-full h-full "
+            className="object-contain scale-150 w-full h-full absolute top-4"
           />
         </div>
-      </motion.div>
-      <motion.div
-        variants={staggerContainer({ type: "tween" }, 0.1)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className="box-container"
-      >
-        <motion.div className="flex-center md:items-start md:justify-start flex-col gap-3">
-          <motion.span
-            variants={fadeIn({ direction: "down", type: "tween",})}
-            className="text-lg text-white"
-          >
-            {`${traductionsData[`${language}`].home.title2}`}
-          </motion.span>
-          <TypingText 
-            title="Judelin INELUS" 
-            customStyles="text-3xl xl:text-4xl font-extrabold text-green-600 px-6"
-          />
-        </motion.div>
-        <motion.div
-          variants={fadeIn({ direction: "up", type: "spring" })}
-          className="description-content"
-        >
-          <span className="font-bold">{traductionsData[`${language}`].home.subtitle} </span>
-          {traductionsData[`${language}`].home.description}
-        </motion.div>
+        <div className="flex flex-col gap-2 items-center md:items-start">
+          <div className="flex flex-col">
+            <span> I'm </span>
+            <div>
+              <span className="text-4xl md:text-6xl font-bold text-primary font-caption">
+                {" "}
+                Judelin INÉLUS{" "}
+              </span>
+            </div>
+          </div>
+          <p className="text-muted-foreground font-semibold">Web and Mobile FrontEnd Developer</p>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2">
+        <p>
+          I'm a Developer with Backend Skills for FrontEnd based in <Code>
+            Brasil 
+            <Image 
+              src="https://www.gov.br/mre/pt-br/consulado-washington/consulate-general-of-brazil-in-washington-dc/BandeiradoBrasil.jpg"
+              alt="flag"
+              width={50}
+              height={50}
+              className="w-4 inline" 
+            />
+          </Code>. I really like participating in the transformation of <Code>ideas</Code> into <Code>reality</Code> creating efficient interfaces with excellent user experiences.
+        </p>
         <SocialMedia />
-      </motion.div>
-    </section>
+      </div>
+    </Section>
   );
 };
 

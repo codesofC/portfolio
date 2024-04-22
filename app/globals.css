@@ -1,65 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
-
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-* {
-  margin: 0;
-  bottom: 0;
-  box-sizing: border-box;
-}
-/*body{
-  background: #1e2430;
-}*/
+  @layer base {
+    :root{
+      --background: 224 71.4% 4.1%;
+      --foreground: 210 20% 98%;
+      --muted: 215 27.9% 16.9%;
+      --muted-foreground: 217.9 10.6% 64.9%;
+      --popover: 224 71.4% 4.1%;
+      --popover-foreground: 210 20% 98%;
+      --card: 224 71.4% 4.1%;
+      --card-foreground: 210 20% 98%;
+      --border: 215 27.9% 16.9%;
+      --input: 215 27.9% 16.9%;
+      --primary: 263.4 70% 50.4%;
+      --primary-foreground: 210 20% 98%;
+      --secondary: 215 27.9% 16.9%;
+      --secondary-foreground: 210 20% 98%;
+      --accent: 215 27.9% 16.9%;
+      --accent-foreground: 210 20% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 20% 98%;
+      --ring: 263.4 70% 50.4%;
+      --radius: 0.5rem;
+    }
+  }
 
-/*body{
-  background: #181a1b;
-}*/
-body {
-  font-family: 'Exo 2', 'Poppins', sans-serif;
-}
-.glassmorphism {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-}
-.items-nav a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(27px);
-  -webkit-backdrop-filter: blur(25px);
-}
-.logo{
-  color: #fff;
-  font-family: "Sixtyfour", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0;
-}
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
 
-::-webkit-scrollbar{
-  width: .6rem;
-  background-color: hsl(250, 12%, 90%);
-  border-radius: .5rem;
-}
-::-webkit-scrollbar-thumb{
-  background-color: hsl(250, 8%, 65%);
-  border-radius: .5rem;
-}
-::-webkit-scrollbar-thumb:hover{
-  background-color: #16a34a;
-}
+  .glassmorphism {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .items-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(27px);
+    -webkit-backdrop-filter: blur(25px);
+  }
+  ::-webkit-scrollbar{
+    width: .6rem;
+    background-color: hsl(250, 12%, 90%);
+    border-radius: .5rem;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: hsl(250, 8%, 65%);
+    border-radius: .5rem;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(var(--primary));
+  }
 
-/* START: Navbar styles */
+  /* START: Navbar styles */
 
 .items-nav a {
-  @apply text-white w-full h-full py-3 px-4 flex-center md:hover:rounded-none md:hover:bg-transparent;
+  @apply text-white w-full h-full py-3 px-4 flex justify-center items-center md:hover:rounded-none md:hover:bg-transparent;
 }
 /* END: Navbar styles */
 
@@ -67,52 +71,3 @@ body {
 .flex-center {
   @apply flex justify-center items-center;
 }
-.paddings {
-  @apply px-6 sm:px-10 md:px-16 lg:px-24 xl:px-44 2xl:px-56;
-}
-.sections {
-  @apply flex flex-col lg:flex-row items-center lg:items-start justify-center gap-x-24 gap-y-12 w-full paddings;
-}
-.img-container {
-  @apply w-full h-full relative overflow-hidden;
-}
-.box-container {
-  @apply w-full lg:w-[70%] xl:w-[60%] 2xl:w-[40%] flex flex-col gap-6;
-}
-/* END: General styles */
-
-/* START: Profil styles */
-.profil-container {
-  @apply flex-center relative w-[200px] h-[200px] md:w-[300px] md:h-[300px] transition-all duration-100 pt-6 shadow-[0_0_10px_rgba(255,255,255)] rounded-full bg-white;
-}
-.overlay {
-  @apply w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-full border-2 border-white absolute top-1/2 -translate-y-1/2 -z-10;
-}
-.description-content {
-  @apply text-white flex flex-wrap leading-[40px];
-}
-/* END: Profil styles */
-
-/* START: About styles */
-.about-img-container {
-  @apply relative w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] border-t-[4px] border-green-600;
-}
-.about-img {
-  @apply w-full h-full object-cover;
-}
-/* END: About styles */
-
-/* START: Project styles */
-.projects-container {
-  @apply relative grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 gap-y-4;
-}
-.project-content {
-  @apply flex flex-col gap-y-6 py-6 justify-between relative;
-}
-.project-content-box {
-  @apply flex justify-between flex-1 flex-col gap-3 lg:px-4 lg:py-4 lg:bg-[rgba(0,0,0,.3)];
-}
-.project-description {
-  @apply text-white flex flex-wrap;
-}
-/* END: Project styles */

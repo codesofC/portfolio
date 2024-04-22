@@ -1,11 +1,12 @@
-"use client";
-
+"use client"
 
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 
 const SocialMedia = () => {
   return (
@@ -16,21 +17,21 @@ const SocialMedia = () => {
         delay: 0.2,
         duration: 0.3,
       })}
-      className="flex gap-4 text-green-600 font-bold text-2xl"
+      className="flex gap-4 text-foreground font-bold text-2xl"
     >
       <li>
-        <Link href="mailto:inelusjudelin01@gmail.com" target="_blank">
-          <AiOutlineMail />
+        <Link href="mailto:inelusjudelin01@gmail.com" target="_blank" className={cn(buttonVariants({variant: 'outline'}), 'p-[2px] size-8')}>
+          <AiOutlineMail size={18} />
         </Link>
       </li>
       <li>
-        <Link href="https://www.linkedin.com/in/judelininelus" target="_blank">
-          <FaLinkedinIn />
+        <Link href="https://www.linkedin.com/in/judelininelus" target="_blank" className={cn(buttonVariants({variant: 'outline'}), 'p-[2px] size-8')}>
+          <FaLinkedinIn size={18} />
         </Link>
       </li>
       <li>
-        <Link href="https://github.com/codesofC" target="_blank">
-          <FaGithub />
+        <Link href="https://github.com/codesofC" target="_blank" className={cn(buttonVariants({variant: 'outline'}), 'p-[2px] size-8')}>
+          <FaGithub size={18} />
         </Link>
       </li>
     </motion.ul>
