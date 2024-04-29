@@ -34,8 +34,8 @@ const Skills = () => {
                   alt={skill.name}
                   className="w-full h-full object-contain aspect-square"
                 />
-                <div className="hidden absolute -top-10 left-1/2 -translate-x-1/2 bg-primary group-hover:block z-10 rounded-md px-2">
-                  <span className="relative w-full h-full py-1 before:w-2 before:h-2 before:rotate-45 before:absolute before:-bottom-[2px] before:left-1/2 before:-translate-x-1/2 before:bg-primary z-[15]"> { skill.name } </span>
+                <div className={`hidden absolute -top-10 left-1/2 -translate-x-1/2 group-hover:block z-10 rounded-md px-2`} style={{background: skill.color}}>
+                  <span className={`font-semibold relative w-full h-full py-1 before:w-2 before:h-2 before:rotate-45 before:absolute before:-bottom-[2px] before:left-1/2 before:-translate-x-1/2 z-[15]`}> { skill.name } </span>
                 </div>
               </div>
             ))}

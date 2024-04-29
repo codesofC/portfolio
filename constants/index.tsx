@@ -2,50 +2,82 @@ import { LuShoppingBag } from "react-icons/lu";
 import { FaTaxi } from "react-icons/fa";
 import { TbWorldStar } from "react-icons/tb";
 import { SiStackshare } from "react-icons/si";
+import { GraduationCap } from "lucide-react";
 
 
 export const skills = [
     {
         name: "HTML",
-        url: "/assets/html.png"
+        url: "/assets/html.png",
+        color: "#e14c25"
     },
     {
         name: 'Css',
-        url: "/assets/css.png"
+        url: "/assets/css.png",
+        color: "#214ce5"
     },
     {
         name:"Javascript",
-        url: "/assets/JavaScript-logo.png"
+        url: "/assets/JavaScript-logo.png",
+        color: "#f0dc4e"
     },
     {
         name: "Java",
-        url: "/assets/java-logo.png"
+        url: "/assets/java-logo.png",
+        color: "#bc7111"
     },
     {
         name: "Sass",
-        url: "/assets/sass.png"
+        url: "/assets/sass.png",
+        color: "#e773ab"
     },
     {
         name: "React",
-        url: "/assets/React-icon.png"
+        url: "/assets/React-icon.png",
+        color: "#5acceb"
     },
     {
         name: "ViteJs",
-        url: "/assets/vite-logo.png"
+        url: "/assets/vite-logo.png",
+        color: "#689dff"
     },
     {
         name: "Bootstrap",
-        url: "/assets/bootstrap-logo.png"
+        url: "/assets/bootstrap-logo.png",
+        color: "#7609f8"
+    },
+    {
+        name: "Firebase",
+        url: "https://cdn.icon-icons.com/icons2/2699/PNG/512/firebase_logo_icon_171157.png",
+        color: "#ffca28"
     },
     {
         name: "Git",
-        url: "/assets/git.png"
+        url: "/assets/git.png",
+        color: "#f05033"
     }
 ]
 
 export const projects = [
     {
         id: 1,
+        title: "University USTA",
+        demoUrl: "https://ead-plataforma.vercel.app",
+        repoUrl: "https://github.com/codesofC/ead-plataforma",
+        imgUrl: "/assets/project-2.png",
+        stacks: [
+            "Typescript",
+            "React",
+            "NextJs",
+            "Tailwind CSS",
+            "Firebase",
+            "Shadcn"
+        ],
+        icon: <GraduationCap />,
+        description: "Distance learning platform."
+    },
+    {
+        id: 2,
         title: "Supermarket",
         demoUrl: "https://super-market-341q.vercel.app",
         repoUrl: "https://github.com/codesofC/superMarket",
@@ -55,14 +87,15 @@ export const projects = [
             "NextJs",
             "Firebase",
             "Redux",
-            "Tailwind CSS"
+            "Tailwind CSS",
+            "Rest API"
         ],
         icon: <LuShoppingBag />,
-        description: "Responsive supermarket e-commerce platform with authentication, API use and home delivery service."
+        description: "Supermarket e-commerce platform with authentication and home delivery service."
 
     },
     {
-        id: 2,
+        id: 3,
         title: "My Taxi",
         demoUrl: "https://meu-taxi.vercel.app/",
         repoUrl: "https://github.com/codesofC/meuTaxi",
@@ -76,21 +109,6 @@ export const projects = [
         ],
         icon: <FaTaxi />,
         description: "MyTaxi, a dynamic and user-friendly mobility platform, offers seamless taxi like Uber."
-    },
-    {
-        id: 3,
-        title: "Metaverse World",
-        demoUrl: "https://metaverse-lime-nine.vercel.app",
-        repoUrl: "https://github.com/codesofC/metaverse",
-        imgUrl: "/assets/project-2.png",
-        stacks: [
-            "React",
-            "NextJs",
-            "Tailwind CSS",
-            "Framer motion",
-        ],
-        icon: <TbWorldStar />,
-        description: "Beautiful responsive and animate landing page maked with Next Js and Framer motion."
     },
     {
         id: 4,
@@ -107,7 +125,7 @@ export const projects = [
             "Firebase"
         ],
         icon: <SiStackshare />,
-        description: "Visit to see more of my projects! It is a responsive platform for sharing projects and others."
+        description: "Visit to see more of my projects! It is a platform for sharing projects and others."
     },
 ]
 
