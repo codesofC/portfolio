@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ImDownload } from "react-icons/im";
 import { contacts } from "@/constants/index";
 import Code from "./Code";
+import { BorderBeam } from "./ui/border-beam";
 
 const About = () => {
   return (
@@ -12,18 +13,18 @@ const About = () => {
       className="flex flex-col md:flex-row items-center gap-12"
       id="about"
     >
-      <div className="">
-        <div className="relative w-72 h-48 group">
+      <div className="relative rounded-md">
+        <div className="relative size-72 group">
           <Image
             src={"/assets/profil-2.jpg"}
             width={900}
             height={600}
             priority
             alt="Profil"
-            className="w-full h-full object-cover rounded-md rotate-12 absolute top-0 z-10 group-hover:rotate-0 transition-all duration-500 grayscale hover:grayscale-0"
+            className="w-full h-full object-cover rounded-md transition-all duration-500 grayscale hover:grayscale-0"
           />
-          <div className="w-full h-full border-4 border-primary rounded-md -rotate-12 group-hover:rotate-0 transition-transform duration-300" />
         </div>
+        <BorderBeam size={75} borderWidth={2} />
       </div>
       <div className="flex flex-col gap-6">
         <h1 className="font-bold text-2xl font-mono"> About Me </h1>
@@ -58,7 +59,6 @@ const About = () => {
           </div>
         </div>
         <div className="w-full flex flex-col sm:flex-row items-start sm:items-end gap-3 sm:gap-6">
-          <ContactCard {...contacts[0]} />
           <Link
             href="/assets/JudelincvEN.pdf"
             className="bg-primary py-2 px-4 font-bold flex items-center gap-2 rounded-md"
