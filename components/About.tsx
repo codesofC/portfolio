@@ -28,11 +28,12 @@ const About = () => {
       </div>
       <div className="flex flex-col gap-6">
         <h1 className="font-bold text-2xl font-mono"> About Me </h1>
-        <div>
+        <div className="text-justify">
           <p>
-            Hi! I'm Judelin, a Developer liking to work on innovative projects.
-            I like creating interactive interfaces for the user's pleasure. I'm
-            always looking to expand my knowledge in different areas.
+            Hi! I'm Judelin, a developer who enjoys working on innovative
+            projects and living in <Code>Brazil</Code>. With the goal of becoming a tech lead
+            and managing large-scale projects, I'm committed to continuous
+            learning and growth.
             <br />
             <br />
             My family is the most important thing to me in this world.
@@ -40,8 +41,8 @@ const About = () => {
             <br />
           </p>
           <div>
-            To entertain myself, I like listening to music, podcasts, audio
-            books. My apps most used are: <br />
+            When I'm not coding, I like to listen to music, podcasts,
+            audiobooks. My most used applications are: <br />
             <div className="flex flex-wrap mt-4 gap-x-2 gap-y-1">
               {appsFavorite.map((app, _i) => (
                 <Code key={_i} className="text-xs">
