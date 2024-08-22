@@ -61,7 +61,7 @@ const About = () => {
         </div>
         <div className="w-full flex flex-col sm:flex-row items-start sm:items-end gap-3 sm:gap-6">
           <Link
-            href="/assets/JudelincvEN.pdf"
+            href="/assets/JudelinInelus.pdf"
             className="bg-primary py-2 px-4 font-bold flex items-center gap-2 rounded-md"
           >
             CV <ImDownload />

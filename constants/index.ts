@@ -22,6 +22,11 @@ export const skills = [
         color: "#f0dc4e"
     },
     {
+        name: "TypeScript",
+        url: "/assets/ts-logo.png",
+        color: "#007ACC"
+    },    
+    {
         name: "Java",
         url: "/assets/java-logo.png",
         color: "#bc7111"
@@ -32,7 +37,17 @@ export const skills = [
         color: "#e773ab"
     },
     {
-        name: "React",
+        name: "Next.js",
+        url: "/assets/nextjs-logo.png",
+        color: "#000"
+    },
+    {
+        name: "Spring Boot",
+        url: "/assets/springboot.png",
+        color: "#6DB33F"
+    },
+    {
+        name: "React-Native",
         url: "/assets/React-icon.png",
         color: "#5acceb"
     },
@@ -45,6 +60,11 @@ export const skills = [
         name: "Bootstrap",
         url: "/assets/bootstrap-logo.png",
         color: "#7609f8"
+    },
+    {
+        name: "Tailwind CSS",
+        url: "/assets/tailwind-logo.png",
+        color: "#38BDF8"
     },
     {
         name: "Firebase",
@@ -60,11 +80,46 @@ export const skills = [
 
 export const projects = [
     {
+        id: 3,
+        title: "SnapTalk",
+        demoUrl: "https://chatapp-landing-page-ten.vercel.app/",
+        repoUrl: "https://github.com/codesofC/chatapp-landing-page",
+        imageUrl: "/assets/snaptalk.png",
+        stacks: [
+            "TypeScript",
+            "React",
+            "ViteJs",
+            "Nextjs",
+            "Expo",
+            "React-Native",
+            "Tailwind CSS",
+            "Firebase",
+            "Framer-motion"
+        ],
+        description: "A real-time web and mobile chat application."
+    },
+    {
+        id: 4,
+        title: "Moodflix",
+        demoUrl: "https://moodflix.vercel.app/",
+        repoUrl: "https://github.com/codesofC/moodflix",
+        imageUrl: "/assets/moodflix.png",
+        stacks: [
+            "React",
+            "NextJs",
+            "Typescript",
+            "Gemini AI",
+            "Tailwind CSS",
+            "Framer-motion"
+        ],
+        description: "A web app offering tv shows suggestions tailored to your current and desired mood for a personalized, emotional cinematic journey."
+    },
+    {
         id: 1,
         title: "University USTA",
         demoUrl: "https://ead-plataforma.vercel.app",
         repoUrl: "https://github.com/codesofC/ead-plataforma",
-        imgUrl: "/assets/project-2.png",
+        imageUrl: "/assets/utsa.png",
         stacks: [
             "Typescript",
             "React",
@@ -73,7 +128,6 @@ export const projects = [
             "Firebase",
             "Shadcn"
         ],
-        icon: <GraduationCap />,
         description: "Distance learning platform."
     },
     {
@@ -81,7 +135,7 @@ export const projects = [
         title: "Supermarket",
         demoUrl: "https://super-market-341q.vercel.app",
         repoUrl: "https://github.com/codesofC/superMarket",
-        imgUrl: "/assets/project-1.png",
+        imageUrl: "/assets/eco.png",
         stacks: [
             "React",
             "NextJs",
@@ -90,42 +144,21 @@ export const projects = [
             "Tailwind CSS",
             "Rest API"
         ],
-        icon: <LuShoppingBag />,
         description: "Supermarket e-commerce platform with authentication and home delivery service."
 
     },
     {
-        id: 3,
-        title: "My Taxi",
-        demoUrl: "https://meu-taxi.vercel.app/",
-        repoUrl: "https://github.com/codesofC/meuTaxi",
-        imgUrl: "/assets/project-0.png",
+        id: 5,
+        title: "Nubank app clone",
+        repoUrl: "https://github.com/codesofC/nubank_clone",
+        imageUrl: "/assets/nubank.png",
         stacks: [
-            "TypeScript",
-            "NextJs",
+            "Expo",
+            "React-Native",
             "Tailwind CSS",
-            "React",
-            "MapBox API"
         ],
-        icon: <FaTaxi />,
-        description: "MyTaxi, a dynamic and user-friendly mobility platform, offers seamless taxi like Uber."
-    },
-    {
-        id: 4,
-        title: "ShareIt",
-        demoUrl: "https://shareit-silk.vercel.app",
-        repoUrl: "https://github.com/codesofC/shareit",
-        imgUrl: "/assets/project-4.png",
-        stacks: [
-            "React",
-            "NextJs",
-            "NextAuth",
-            "Typescript",
-            "Tailwind CSS",
-            "Firebase"
-        ],
-        icon: <SiStackshare />,
-        description: "Visit to see more of my projects! It is a platform for sharing projects and others."
+        description: "A Frontend clone of the Nubank mobile app, focusing on replicating the user interface of the tab pages."
+
     },
 ]
 

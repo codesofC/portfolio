@@ -3,10 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const SocialMedia = () => {
   return (
@@ -21,17 +20,17 @@ const SocialMedia = () => {
     >
       <li>
         <Link href="mailto:inelusjudelin01@gmail.com" target="_blank" className={cn(buttonVariants({variant: 'outline'}), 'p-[2px] size-8')}>
-          <AiOutlineMail size={18} />
+          <Mail size={18} />
         </Link>
       </li>
       <li>
         <Link href="https://www.linkedin.com/in/judelininelus" target="_blank" className={cn(buttonVariants({variant: 'outline'}), 'p-[2px] size-8')}>
-          <FaLinkedinIn size={18} />
+          <Linkedin size={18} />
         </Link>
       </li>
       <li>
         <Link href="https://github.com/codesofC" target="_blank" className={cn(buttonVariants({variant: 'outline'}), 'p-[2px] size-8')}>
-          <FaGithub size={18} />
+          <Github size={18} />
         </Link>
       </li>
     </motion.ul>

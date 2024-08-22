@@ -17,7 +17,7 @@ export default function Home() {
       <Spacing size="lg" />
       <Skills />
       <Spacing size="lg" />
-      <Section className="grid grid-cols-1 gap-6 lg:gap-2" id="projects">
+      <Section className="flex justify-center items-center" id="projects">
         <Projects />
       </Section>
 

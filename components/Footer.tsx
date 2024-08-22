@@ -17,7 +17,7 @@ const Footer = () => {
                 Build by Judelin INÉLUS
             </p>
             <p className="text-center">
-                Copyright &copy; 2023 - Judelin INÉLUS - All rights reserved
+                Copyright &copy; 2024 - Judelin INÉLUS - All rights reserved
             </p>
         </motion.div>
     </footer>
