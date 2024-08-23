@@ -2,10 +2,8 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Profil from "@/components/Profil";
 import Projects from "@/components/Projects";
-import Section from "@/components/Section";
 import Skills from "@/components/Skills";
 import Spacing from "@/components/Spacing";
-import Works from "@/components/Works";
 
 export default function Home() {
   return (
@@ -17,10 +15,7 @@ export default function Home() {
       <Spacing size="lg" />
       <Skills />
       <Spacing size="lg" />
-      <Section className="flex justify-center items-center" id="projects">
-        <Projects />
-      </Section>
-
+      <Projects />
       <Spacing size="lg" />
       <Contact />
       <Spacing />

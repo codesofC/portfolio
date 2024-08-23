@@ -42,12 +42,7 @@ export const skills = [
         color: "#000"
     },
     {
-        name: "Spring Boot",
-        url: "/assets/springboot.png",
-        color: "#6DB33F"
-    },
-    {
-        name: "React-Native",
+        name: "ReactNative",
         url: "/assets/React-icon.png",
         color: "#5acceb"
     },
@@ -57,12 +52,17 @@ export const skills = [
         color: "#689dff"
     },
     {
+        name: "Springboot",
+        url: "/assets/springboot.png",
+        color: "#6DB33F"
+    },
+    {
         name: "Bootstrap",
         url: "/assets/bootstrap-logo.png",
         color: "#7609f8"
     },
     {
-        name: "Tailwind CSS",
+        name: "TailwindCSS",
         url: "/assets/tailwind-logo.png",
         color: "#38BDF8"
     },
